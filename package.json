@@ -9,10 +9,19 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-picker/picker": "2.11.1",
+    "@rnmapbox/maps": "^10.1.41",
     "expo": "~53.0.20",
+    "expo-asset": "~11.1.7",
+    "expo-linear-gradient": "~14.1.5",
+    "expo-sqlite": "~15.2.14",
     "expo-status-bar": "~2.2.3",
+    "papaparse": "^5.5.3",
     "react": "19.0.0",
-    "react-native": "0.79.5"
+    "react-native": "0.79.5",
+    "react-native-csv": "^0.2.0",
+    "react-native-map-clustering": "^4.0.0",
+    "react-native-maps": "1.20.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
