@@ -18,15 +18,7 @@ export default function WhatPickerModal({
   toggleLocation,
   setToggleLocation,
   setShowWhatPickerModal,
-
-  filteredSightings,
-  setFilteredSightings,
-  database,
-  setDatabase,
 }) {
-  function handlePress() {
-    setShowSearchModal(!showSearchModal);
-  }
   return (
     <Modal
       transparent
