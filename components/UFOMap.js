@@ -11,12 +11,12 @@ export default function UFOMap({ toggleLocation, filteredSightings }) {
   const [sightingModalVisible, setSightingModalVisible] = React.useState(false);
   const [selectedSighting, setSelectedSighting] = React.useState(null);
   console.log("Toggle Location:", toggleLocation);
-  if (toggleLocation == "UK") {
+  if (toggleLocation == "gb") {
     latitude = 54.5; // Rough center of the UK
     longitude = -3.5; // Rough center of the UK
     latDelta = 8; // Bigger delta to zoom out
     longDelta = 8; // Bigger delta to zoom out
-  } else if (toggleLocation == "US") {
+  } else if (toggleLocation == "us") {
     (latitude = 38.30558200233986), -99.74779056184356; // Rough center of the US (San Francisco)
     longitude = -99.74779056184356; // Rough center of the US (San Francisco)}
     latDelta = 50; // Bigger delta to zoom out
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     padding: 5,
     borderWidth: 1,
     borderColor: "#39FF14", // neon green border
-    marginTop: 20,
+    marginTop: 10,
     height: 500,
   },
   map: {
