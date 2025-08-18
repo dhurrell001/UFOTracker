@@ -1,9 +1,6 @@
 import React from "react";
 import { Modal, View, StyleSheet, Text, TouchableOpacity } from "react-native";
-import FilterButtonContainer from "./FilterButtonContainer";
 export default function CurrentSearch({
-  showCurrentSearchModal,
-  setShowCurrentSearchModal,
   selectedLocation,
   selectedShape,
   selectedDate,
