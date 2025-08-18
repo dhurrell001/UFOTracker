@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     height: 40,
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 10,
+    // marginBottom: 10,
   },
   buttonText: {
     // color: "silver",
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 10,
+    // marginBottom: 10,
   },
   queryText: {
     color: "#FFFFFF",
