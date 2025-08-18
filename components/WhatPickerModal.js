@@ -4,10 +4,6 @@ import { Picker } from "@react-native-picker/picker";
 import { LinearGradient } from "expo-linear-gradient";
 
 export default function WhatPickerModal({
-  showWherePickerModal,
-  setShowWherePickerModal,
-  selectedLocation,
-  setSelectedLocation,
   setSelectedShape,
   showWhatPickerModal,
   selectedShape,
