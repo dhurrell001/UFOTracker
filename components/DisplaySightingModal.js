@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native";
-import { Picker } from "@react-native-picker/picker";
+
 import { LinearGradient } from "expo-linear-gradient";
 
 export default function WherePickerModal({
