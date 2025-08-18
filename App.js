@@ -12,7 +12,7 @@ import WherePickerModal from "./components/WherePickerModal";
 import WhatPickerModal from "./components/WhatPickerModal";
 import SearchModal from "./components/SearchModal"; // Assuming this is the correct import path
 export default function App() {
-  const [toggleLocation, setToggleLocation] = useState("gb");
+  const [toggleLocation, setToggleLocation] = useState("us");
   const [database, setDatabase] = useState(null);
   const [filteredSightings, setFilteredSightings] = useState([]);
   const [showWherePickerModal, setShowWherePickerModal] = useState(false);
@@ -69,21 +69,6 @@ export default function App() {
       })();
     }
     if (!database || !selectedLocation) return;
-
-    // (async () => {
-    //   console.log("Filtering sightings by location:", selectedLocation);
-
-    //   // Query the database for sightings in the selected location
-    //   const locationSightings = await getSightingsByCountry(
-    //     database,
-    //     selectedLocation
-    //   );
-    //   // console.log(filteredSightings);
-
-    //   setFilteredSightings(locationSightings);
-
-    //   console.log("Filtered Sightings by location:", locationSightings.length);
-    // })(); // <-- immediately invoked
   }, [selectedLocation, selectedShape, database]); // dependencies
 
   if (!database) {
@@ -134,23 +119,6 @@ export default function App() {
           setSelectedShape={setSelectedShape}
         />
       )}
-      {/* {showSearchModal && (
-        <SearchModal
-          showWherePickerModal={showWherePickerModal}
-          setShowWherePickerModal={setShowWherePickerModal}
-          selectedLocation={selectedLocation}
-          setSelectedLocation={setSelectedLocation}
-          setSelectedShape={setSelectedShape}
-          showWhatPickerModal={showWhatPickerModal}
-          selectedShape={selectedShape}
-          setShowWhatPickerModal={setShowWhatPickerModal}
-          toggleLocation={toggleLocation}
-          setToggleLocation={setToggleLocation}
-          setShowSearchModal={setShowSearchModal}
-          showSearchModal={showSearchModal}
-          filteredSightings={filteredSightings}
-        />
-      )} */}
     </LinearGradient>
   );
 }
